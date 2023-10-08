@@ -1,0 +1,26 @@
+{
+  "name": "ideaflow-revamp",
+  "version": "1.0.0",
+  "description": "An assignment to revamp the original website \"ideaflow.io\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshwagadkar/ideaflow-revamp.git"
+  },
+  "keywords": [
+    "HTML5",
+    "SCSS",
+    "Vanilla",
+    "JS",
+    "mobile-first"
+  ],
+  "author": "Eshwa Gadkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eshwagadkar/ideaflow-revamp/issues"
+  },
+  "homepage": "https://github.com/eshwagadkar/ideaflow-revamp#readme"
+}
