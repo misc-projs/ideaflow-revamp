@@ -1,0 +1,56 @@
+// Media Query Manager
+
+/*
+
+~ 0 - 600px : Phone
+~ 600px - 900px : Tablet Portrait
+~ 900px - 1200px : Tablet Landscape
+~ [1200px - 1800px ] : Desktop where our normal styles are applied
+~ 1800 + : Big Desktop
+
+ $breakpoint argument choices 
+~ phone
+~ phone-landscape
+~ tab-port
+~ tab-land
+~ big-desktop
+~ big-desktop-2x
+
+
+ORDER : Base + Typography > General Layout + Grid > Page Layout > Components 
+
+1em = 16px;
+
+*/
+
+@mixin respond($breakpoint){
+
+    @if $breakpoint == phone {
+        @media only screen and (min-width:37.5em){  @content; }
+    }
+
+    @if $breakpoint == phone-landscape{
+        @media only screen and (orientation: landscape){ @content; }
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (min-width:56.25em) {  @content; }
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (min-width:75em) {  @content; }
+    }
+
+    //Change Font Size and other font related properties for screen sizes above 1800px or 112.5em
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width:112.5em) { @content; }
+    }
+
+    //Download High Resolution Image on High Resolution Screen and Screen Viewport Width > 600px(37.5em)
+    @if $breakpoint == big-desktop-2x {  
+        @media only screen and (min-width:37.5em) and (min-resolution:192dpi),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width:37.5em) // Support for Safari Browser 
+       {  @content; } 
+    }
+
+}
