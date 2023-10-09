@@ -1,3 +1,136 @@
 .header{
     grid-column: full-start / full-end;
+
+    &__logo-container{
+        
+    }
+
+    &__logo-image{
+        width: 12rem;
+    }
+
+    &__navigation{
+
+    }
+
+    &__banner{
+
+    }
+
+    &__sm-links{
+
+    }
+
+    &__investors{
+
+    }
+
+}
+
+.navigation {
+    
+    &__checkbox{
+        display: none;
+    }
+
+    &__button{
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: .5rem;
+        right: 2rem; 
+        border-radius: 50%;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+        
+        &:hover{
+          background-color: $color-light-black;
+        }
+    }
+
+    &__icon{
+        position: relative;
+        margin-top: 3.5rem;
+
+        &,
+        &::after,
+        &::before{
+            width: 3rem;
+            height: 3.4px;
+            background-color: $color-white;
+            display: inline-block;
+        }
+
+        &::after,
+        &::before{
+            content:"";
+            position: absolute;
+            left: 0;
+        }
+
+        &::after{ top: .9rem;}
+        &::before{ top: -.9rem;}
+    }
+
+    &__background{
+
+    }
+
+    &__nav{
+
+    }
+
+    &__list{
+    }
+
+    &__item{
+
+    }
+    
+    &-link{
+
+    }
+}
+
+.hero-banner{
+
+    &__image{
+
+    }
+
+    &__main-heading{
+
+    }
+
+    &__text-content{
+
+    }
+
+    &__cta{
+
+    }
+
+}
+
+.sm-links{
+
+    &__list{
+
+    }
+
+    &__item{
+
+    }
+}
+
+.investors{
+
+    &__list{
+
+    }
+
+    &__items{
+
+    }
 }
