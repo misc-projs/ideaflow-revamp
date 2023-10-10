@@ -1,0 +1,42 @@
+.article {
+
+    display: grid;
+    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    place-items: center;
+    &__image {
+
+        & img {
+            width: 50rem;
+        }
+    }
+
+    &__content {
+        
+        &-left{
+
+        }
+
+        &-right{
+
+        }
+    }
+
+    & .blockquote {
+
+        display: flex;
+        flex-direction: column;
+        
+        &__header {
+
+        }
+
+        &__description {
+
+        }
+
+        &__author {
+
+        }
+    }
+
+}
