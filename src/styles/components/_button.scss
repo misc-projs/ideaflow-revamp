@@ -1,0 +1,33 @@
+.cta {
+
+    &,
+    &:link,
+    &:visited{
+        background-color: $primary-light;
+        text-decoration: none;
+        color: $color-black;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        cursor: pointer;
+        position: relative;
+        transition: all 200ms;
+    }
+
+    
+    &:hover {
+        background-color: $primary-dark;
+        color: $color-white;
+
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba($color-black,.2);
+
+    }
+
+    &:active,
+    &:focus{
+        outline: none;  // Modification for the button when we click in booking section 
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba($color-black,.2);
+    }
+}
