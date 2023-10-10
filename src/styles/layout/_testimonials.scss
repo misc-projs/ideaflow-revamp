@@ -1,0 +1,57 @@
+.testimonials {
+    
+    &__list-container{
+        
+    }
+    
+    &-list {
+        
+        display: grid;
+        grid-template-rows: repeat(3, minmax(min-content, max-content));
+
+        &__item{
+            list-style: none;
+            padding: 1.5rem;
+        }
+    }
+
+}
+
+.testimonial-card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-light-black;
+    padding: 3rem;
+
+    &__header{
+        margin-bottom: 1rem;
+    }
+
+    &__image{
+        width: 9rem;
+    }
+
+    &__content{
+        margin-bottom: 1rem;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    &__footer{
+        text-align: center;    
+    }
+
+    &__author{
+
+    }
+
+    &__designation{
+
+    }
+
+}
