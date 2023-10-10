@@ -6,7 +6,8 @@
     row-gap: 1.5rem;
 
     &__content {
-
+        display: flex;
+        flex-direction: column;
     }
 
     &__heading{
@@ -19,6 +20,13 @@
         padding: .5rem 2rem;
         font-size: 1.5rem;   
         text-align: left; 
+    }
+
+    &__cta{
+        width: 85%;
+        padding: .5rem 2rem;
+        align-self: center;
+        margin: 1rem 0;
     }
 
 }
