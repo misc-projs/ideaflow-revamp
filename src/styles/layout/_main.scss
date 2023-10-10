@@ -1,3 +1,6 @@
 .main{
     grid-column: full-start / full-end;
+    
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
 }
