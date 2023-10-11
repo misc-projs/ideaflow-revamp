@@ -2,11 +2,11 @@
     grid-column: full-start / full-end;
 
     display: grid;
-    grid-template-rows: 10vh repeat(3, min-content);
+    grid-template-rows: 10vh repeat(4, minmax(min-content, max-content));
     grid-template-columns: [header-start] repeat(4, minmax(3rem, 1fr)) [header-end];
 
     font-size: 1.4rem;
-
+    
     &__logo-container{
         grid-column: 1 / 3;
         display: flex;
@@ -41,6 +41,8 @@
 
 .navigation {
     
+    position: relative;
+
     &__checkbox{
         display: none;
     }
@@ -174,6 +176,8 @@
     place-items: center; 
     gap: 1.3rem;
 
+    position: relative;
+
     &__image{
         padding: 1rem 0 0;
     }
@@ -199,6 +203,8 @@
 .sm-links{
     padding: 2rem 0;
 
+    position: relative;
+
     &__list{
         display: flex;
         justify-content: space-evenly;
@@ -217,8 +223,16 @@
 
 .investors{
 
+    position: relative;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
+    &__header{
+        font-weight: 300;
+        text-align: center;
+    }
 
     &__list{
         display: grid;
