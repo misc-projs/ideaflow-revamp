@@ -1,6 +1,5 @@
 .footer{
     grid-column: full-start / full-end;
-    padding: 1.5rem;
 
     display: grid;
     row-gap: 1.4rem;
@@ -34,10 +33,18 @@
     &__list-head{
         font-weight: 700;
         margin: 1rem 0;
+
+        @include respond(screen320){
+            font-size: 1.4rem;
+        }
     }
 
     &__link {
 
+        @include respond(screen320){
+            font-size: 1.4rem;
+        }
+        
         & a{
             text-decoration: none;
             color: $color-white;
@@ -51,8 +58,16 @@
     &__copyright{
         color: $color-lighter-black;
         font-size: 1.2rem;
+
+        @include respond(screen320){
+          font-size: 1.4rem;
+        }
     }
 
-    padding-top: 15rem;
+    padding: 15rem 1.5rem 1.5rem;
+
+    @include respond(screen320){
+        padding: 12rem 4rem 2rem;
+    }
 
 }

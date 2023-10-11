@@ -12,6 +12,14 @@
         &__item{
             list-style: none;
             padding: 1.5rem;
+
+            @include respond(screen320){
+                padding: 2rem 4rem;
+            }
+
+            @include respond(screen360){
+                padding: 2rem 6rem;
+            }
         }
     }
 
@@ -31,15 +39,39 @@
 
     &__image{
         width: 8rem;
+
+        @include respond(screen320){
+            width: 10rem;
+        }
+
+        @include respond(screen360){
+            width: 12rem;
+        }
     }
 
     &__content{
         margin: 1.5rem 0 1.8rem;
+
+        @include respond(screen320){
+            margin: 1.8rem 0 2.4rem;
+        }
+
+        @include respond(screen360){
+            margin: 2.2rem 0 2.6rem;
+        }
     }
 
     &__text{
         font-size: 1.2rem;
         text-align: center;
+
+        @include respond(screen320){
+            font-size: 1.6rem;
+        }
+
+        @include respond(screen360){
+            font-size: 2rem;
+        }
     }
 
     &__footer{
@@ -48,9 +80,25 @@
 
     &__author{
 
+        @include respond(screen320){
+            font-size: 1.3rem;
+        }
+
+        @include respond(screen360){
+            font-size: 1.6rem;
+        }
+
     }
 
     &__designation{
+
+        @include respond(screen320){
+            font-size: 1.3rem;
+        }
+
+        @include respond(screen360){
+            font-size: 1.6rem;
+        }
 
     }
 

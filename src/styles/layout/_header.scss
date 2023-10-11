@@ -24,6 +24,15 @@
         position: absolute;
         top: 3.2rem;
         left: 3rem;
+
+        @include respond(screen320){
+            width: 10rem;
+        }
+
+        @include respond(screen360){
+            width: 12rem;
+            left: 6rem;
+        }
     }
 
     &__navigation{
@@ -200,6 +209,7 @@
         @include respond(screen320){
             padding: 1.5rem 0;
         }
+
     }
 
     &__main-heading{
@@ -209,6 +219,11 @@
         @include respond(screen320){
             font-size: 2.8rem;
             padding: .8rem 4rem 0;
+        }
+
+        @include respond(screen360){
+            font-size: 3.8rem;
+            padding: .8rem 6rem 0;
         }
     }
 
@@ -221,16 +236,29 @@
             font-size: 1.8rem;
             padding: 1rem 4rem 2rem;
         }
+
+        @include respond(screen360){
+            padding: 1rem 6rem 2rem;
+            font-size: 2.2rem;
+
+        }
     }
 
     &__cta{
         padding: 1rem 2.8rem;
         font-size: 1.3rem;
-        width: 90%;
+        width: 85%;
         text-align: center;
 
         @include respond(screen320){
          width: 76%;
+         font-size: 1.5rem;
+         padding: 1.2rem 3rem;
+        }
+
+        @include respond(screen360){
+         font-size: 1.8rem;
+         padding: 1.4rem 3.2rem;
         }
     }
 
@@ -242,7 +270,11 @@
     position: relative;
 
     @include respond(screen320){
-        padding: 1.4rem 1.4rem;
+        padding: 1.4rem;
+    }
+
+    @include respond(screen360){
+        padding: 1.8rem;
     }
 
     &__list{
@@ -253,10 +285,14 @@
     &__item{
         list-style: none;
         border: 1px solid $cyan;
-        border-radius: 5px;
-        padding: 10px;
+        border-radius: .5rem;
+        padding: 1rem;
         transition: all .3s;
         cursor: pointer;
+
+        @include respond(screen320){
+            padding: 2rem;
+        }
 
         &:hover {
             background-color: $color-white;
@@ -301,6 +337,11 @@
             font-size: 2.4rem;
             padding: 0 4rem;
         }
+
+        @include respond(screen360){
+            font-size: 3rem;
+            padding: 0 6rem;
+        }
     }
 
     &__list{
@@ -312,7 +353,12 @@
 
         @include respond(screen320){
             padding: 2rem 0;
-            gap: 5rem;
+            grid-gap: 2.5rem 5rem;
+        }
+
+        @include respond(screen360){
+            padding: 6rem 0;
+            grid-gap: 5.5rem 8rem;
         }
     }
 
@@ -329,6 +375,10 @@
     
     &__image {
         width: 7rem;
+
+        @include respond(screen360){
+            width: 10rem;
+        }
     }
 
     &__item {

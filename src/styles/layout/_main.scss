@@ -10,6 +10,16 @@
         border-top: 5px dotted $color-light-black;
         width: 40px;
         margin: 0 auto 1rem;
+
+        @include respond(screen320){
+            margin: 3rem auto;
+        }
+
+        @include respond(screen360){
+            margin: 0rem auto 4rem;
+            border-width: 10px;
+            width: 60px;
+        }
     }
 
     padding-bottom: 15rem;
