@@ -4,9 +4,8 @@
     display: grid;
     grid-template-rows: 10vh repeat(4, minmax(min-content, max-content));
     grid-template-columns: [header-start] repeat(4, minmax(3rem, 1fr)) [header-end];
+    row-gap: 1.8rem;
 
-    font-size: 1.4rem;
-    
     &__logo-container{
         grid-column: 1 / 3;
         display: flex;
@@ -179,29 +178,29 @@
     position: relative;
 
     &__image{
-        padding: 1rem 0 0;
+        padding: 1rem 0 1rem;
     }
 
     &__main-heading{
-        text-align: center;
+        font-size: 2.4rem;
         padding: .4rem .7rem 0;
     }
 
     &__text-content{
-        text-align: justify;
+        text-align: left;
         padding: 0 .8rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     &__cta{
         padding: 1rem 4rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
 }
 
 .sm-links{
-    padding: 2rem 0;
+    padding: 1rem 0;
 
     position: relative;
 
@@ -212,6 +211,28 @@
 
     &__item{
         list-style: none;
+        border: 1px solid $cyan;
+        border-radius: 5px;
+        padding: 10px;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-white;
+            border: 1px solid $color-white;
+            transform: translateY(-3px);
+        }
+
+        &:active,
+        &:focus{
+            transform: translateY(3px);
+        }
+
+        &:hover svg {
+            fill: $color-black;
+        }
+
+
     }
 
     &__icon{
@@ -228,16 +249,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     &__header{
-        font-weight: 300;
-        text-align: center;
+        font-weight: 400;
+        text-align: left;
+        font-size: 2rem;
+        padding: 0 0 0 1.2rem;
     }
 
     &__list{
         display: grid;
         grid-template-rows: repeat(2, min-content);
         grid-template-columns: repeat(2, min-content);
+        place-items: center;
+        margin-top: 1rem;
     }
 
     &__items{
@@ -248,10 +274,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
     
     &__image {
-        width: 4rem;
+        width: 8rem;
     }
 
     &__item {
@@ -271,6 +298,8 @@
         &-4 {
             grid-row: 2 / 3 ;
             grid-column: 2 / 3 ;
+            font-size: 1.4rem;
+            padding-top: .5rem;
 
             & a{
                 text-decoration: none;
