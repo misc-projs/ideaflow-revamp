@@ -7,54 +7,85 @@
 
 }
 
-// Media Query Manager
+// ORDER : Base + Typography > General Layout + Grid > Page Layout > Components 
 
-/*
-
-~ 0 - 600px : Phone
-~ 600px - 900px : Tablet Portrait
-~ 900px - 1200px : Tablet Landscape
-~ [1200px - 1800px ] : Desktop where our normal styles are applied
-~ 1800 + : Big Desktop
-
- $breakpoint argument choices 
-~ phone
-~ phone-landscape
-~ tab-port
-~ tab-land
-~ big-desktop
-~ big-desktop-2x
-
-
-ORDER : Base + Typography > General Layout + Grid > Page Layout > Components 
-
-1em = 16px;
-
-*/
+// 1em = 16px;
 
 @mixin respond($breakpoint){
 
-    @if $breakpoint == phone {
+    @if $breakpoint == screen240 {
+        @media only screen and (min-width:15em){  @content; }
+    }
+
+    @if $breakpoint == screen320 {
+        @media only screen and (min-width:20em){  @content; }
+    }
+
+    @if $breakpoint == screen360 {
+        @media only screen and (min-width:22.5em){  @content; }
+    }
+
+    @if $breakpoint == screen480 {
+        @media only screen and (min-width:30em){  @content; }
+    }
+
+    @if $breakpoint == screen540 {
+        @media only screen and (min-width:33.75em){  @content; }
+    }
+
+    @if $breakpoint == screen576 {
+        @media only screen and (min-width:36em){  @content; }
+    }
+
+    @if $breakpoint == screen600 {
         @media only screen and (min-width:37.5em){  @content; }
     }
 
-    @if $breakpoint == phone-landscape{
-        @media only screen and (orientation: landscape){ @content; }
+    @if $breakpoint == screen640 {
+        @media only screen and (min-width:40em){  @content; }
     }
 
-    @if $breakpoint == tab-port {
+    @if $breakpoint == screen720 {
+        @media only screen and (min-width:45em){  @content; }
+    }
+
+    @if $breakpoint == screen768 {
+        @media only screen and (min-width:48em){  @content; }
+    }
+
+    @if $breakpoint == screen800 {
+        @media only screen and (min-width:50em){  @content; }
+    }
+
+    @if $breakpoint == screen900 {
         @media only screen and (min-width:56.25em) {  @content; }
     }
 
-    @if $breakpoint == tab-land {
-        @media only screen and (min-width:75em) {  @content; }
+    @if $breakpoint == screen980 {
+        @media only screen and (min-width:61.25em){  @content; }
+    }
+
+    @if $breakpoint == screen1024 {
+        @media only screen and (min-width:64em){  @content; }
+    }
+
+    @if $breakpoint == screen1080 {
+        @media only screen and (min-width:67.5em){  @content; }
+    }
+
+    @if $breakpoint == screen1280 {
+        @media only screen and (min-width:80em){  @content; }
+    }
+
+    @if $breakpoint == screen1366 {
+        @media only screen and (min-width:87.375em){  @content; }
     }
 
     //Change Font Size and other font related properties for screen sizes above 1800px or 112.5em
     @if $breakpoint == big-desktop {
         @media only screen and (min-width:112.5em) { @content; }
     }
-
+ 
     //Download High Resolution Image on High Resolution Screen and Screen Viewport Width > 600px(37.5em)
     @if $breakpoint == big-desktop-2x {  
         @media only screen and (min-width:37.5em) and (min-resolution:192dpi),
