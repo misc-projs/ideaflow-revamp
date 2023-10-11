@@ -22,8 +22,8 @@
     &__logo-image{
         width: 7rem;
         position: absolute;
-        top: 3rem;
-        left: 5rem;
+        top: 3.2rem;
+        left: 3rem;
     }
 
     &__navigation{
@@ -195,7 +195,7 @@
     position: relative;
 
     &__image{
-        padding: 1rem 0;
+        padding: 0 0 2rem;
 
         @include respond(screen320){
             padding: 1.5rem 0;
