@@ -1,7 +1,20 @@
 // COLOR VARIABLES
-$color-white:#fff;
 $color-black:#040000;
-$color-light-black:#222020;
+$color-light-black:#534d4d;
+
+// Primary Colors
+$dark-blue-primary-1: #1c2431; // intro and email sign up background
+$dark-blue-primary-2: #181f2a; // main background
+$dark-blue-primary-3: #0b1523; // footer background
+$dark-blue-primary-4: #202a3c; // testimonials background
+
+// Accent
+$cyan : hsl(176, 68%, 64%); // inside call-to-action gradient
+$blue : hsl(198, 60%, 50%); // inside call-to-action gradient
+$light-red: hsl(0, 100%, 63%); // error
+
+// Neutral
+$color-white: hsl(0, 0%, 100%); // white 
 
 $primary-light: #00C8CE;
 $primary-dark: #009aa0;

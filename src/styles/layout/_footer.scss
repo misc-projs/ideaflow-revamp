@@ -5,7 +5,9 @@
     display: grid;
     row-gap: 1.4rem;
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
+    background-color: $dark-blue-primary-4;
 
     &__header{
 
@@ -50,5 +52,7 @@
         color: $color-light-black;
         font-size: 1.2rem;
     }
+
+    padding-top: 15rem;
 
 }

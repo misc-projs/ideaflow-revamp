@@ -56,7 +56,7 @@
         z-index: 2000;
         text-align: center;
         cursor: pointer;
-        background-color: $color-light-black;
+        background-color: $dark-blue-primary-3;
     }
 
     &__icon{
@@ -161,6 +161,8 @@
     &__item{
         list-style: none;
         padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
     
     &-link{
@@ -188,7 +190,7 @@
 
     &__text-content{
         text-align: left;
-        padding: 0 .8rem;
+        padding: 1rem .8rem 1.8rem;
         font-size: 1.5rem;
     }
 
