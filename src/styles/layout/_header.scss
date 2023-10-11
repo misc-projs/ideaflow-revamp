@@ -2,7 +2,7 @@
     grid-column: full-start / full-end;
 
     display: grid;
-    grid-template-rows: 10vh repeat(4, minmax(min-content, max-content));
+    grid-template-rows: 14vh repeat(4, minmax(min-content, max-content));
     grid-template-columns: [header-start] repeat(4, minmax(3rem, 1fr)) [header-end];
     row-gap: 1.8rem;
 
@@ -12,17 +12,28 @@
         align-items: end;
         justify-content: center;
 
-        position: fixed;
-        top: 2.4rem;
-        left: 2rem;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: $color-black;
     }
 
     &__logo-image{
         width: 7rem;
+        position: absolute;
+        top: 3rem;
+        left: 5rem;
     }
 
     &__navigation{
         grid-column: 3 / 5;
+
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: $color-black;
     }
 
     &__banner{
@@ -44,7 +55,7 @@
 
 .navigation {
     
-    position: relative;
+    // position: relative;
 
     &__checkbox{
         display: none;
@@ -184,18 +195,32 @@
     position: relative;
 
     &__image{
-        padding: 1rem 0 1rem;
+        padding: 1rem 0;
+
+        @include respond(screen320){
+            padding: 1.5rem 0;
+        }
     }
 
     &__main-heading{
         font-size: 2.4rem;
         padding: .4rem 2rem 0;
+
+        @include respond(screen320){
+            font-size: 2.8rem;
+            padding: .8rem 4rem 0;
+        }
     }
 
     &__text-content{
         text-align: left;
         padding: 1rem 2rem 1.8rem;
         font-size: 1.5rem;
+
+        @include respond(screen320){
+            font-size: 1.8rem;
+            padding: 1rem 4rem 2rem;
+        }
     }
 
     &__cta{
@@ -203,6 +228,10 @@
         font-size: 1.3rem;
         width: 90%;
         text-align: center;
+
+        @include respond(screen320){
+         width: 76%;
+        }
     }
 
 }
@@ -211,6 +240,10 @@
     padding: 1rem;
 
     position: relative;
+
+    @include respond(screen320){
+        padding: 1.4rem 1.4rem;
+    }
 
     &__list{
         display: flex;
@@ -240,7 +273,6 @@
             fill: $color-black;
         }
 
-
     }
 
     &__icon{
@@ -264,6 +296,11 @@
         text-align: left;
         font-size: 2rem;
         padding: 0 2rem;
+
+        @include respond(screen320){
+            font-size: 2.4rem;
+            padding: 0 4rem;
+        }
     }
 
     &__list{
@@ -272,6 +309,11 @@
         grid-template-columns: repeat(2, min-content);
         place-items: center;
         padding: 2rem;
+
+        @include respond(screen320){
+            padding: 2rem 0;
+            gap: 5rem;
+        }
     }
 
     &__items{
