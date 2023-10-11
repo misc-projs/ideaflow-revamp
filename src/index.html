@@ -52,7 +52,15 @@
 
       <!-- Start: Header Banner-->
       <section class="header__banner hero-banner">
-        <img class="hero-banner__image" src="./images/header/banner/image-header-vsmall.png" alt="" srcset="">
+        
+        <picture>
+            <source srcset="./images/header/banner/image-header-vlarge.png" media="(min-width:112.5em)"></source>
+            <source srcset="./images/header/banner/image-header-large.png" media="(min-width:67.5em)"></source>
+            <source srcset="./images/header/banner/image-header-medium.png" media="(min-width:37.5em)"></source>
+            <source srcset="./images/header/banner/image-header-small.png" media="(min-width:20em)"></source>
+            <img class="hero-banner__image" src="./images/header/banner/image-header-vsmall.png" alt="banner" >
+        </picture>
+        
         <h2 class="hero-banner__main-heading" >The Intelligence Amplification Company</h2>
         <p class="hero-banner__text-content">
             We're creating an ecosystem for humans and machines to work together to solve the world's 
