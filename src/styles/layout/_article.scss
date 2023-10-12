@@ -5,6 +5,22 @@
     place-items: center;
     row-gap: 1.5rem;
 
+    @include respond(screen360){
+        row-gap: 2.5rem;
+    }
+
+    @include respond(screen480){
+        row-gap: 2.5rem;
+    }
+
+    @include respond(screen540){
+        row-gap: 2.5rem;
+    }
+
+    @include respond(screen600){
+        row-gap: 3rem;
+    }
+
     &__image {
 
         width: 200px;
@@ -18,9 +34,19 @@
             row-gap: 2.5rem;
         }
 
-        @include respond(screen360){
+        @include respond(screen480){
             width: 375px;
             row-gap: 2.5rem;
+        }
+
+        @include respond(screen540){
+            width: 425px;
+            row-gap: 2.5rem;
+        }
+
+        @include respond(screen600){
+            width: 450px;
+            row-gap: 3rem;
         }
         
     }

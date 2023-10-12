@@ -98,6 +98,10 @@
             padding: 2rem;
             margin: 3.2rem 0 1rem;
         }
+
+        @include respond(screen600){
+            width: 75%;
+        }
     }
 
     &__image{
@@ -115,6 +119,16 @@
         @include respond(screen480){
             width: 375px;
         }
+
+        @include respond(screen540){
+            width: 425px;
+        }
+
+        @include respond(screen600){
+            width: 450px;
+        }
+
+        
 
     }
 
