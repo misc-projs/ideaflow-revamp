@@ -128,7 +128,10 @@
             width: 450px;
         }
 
-        
+        @include respond(screen600){
+            width: 475px;
+        }
+
 
     }
 

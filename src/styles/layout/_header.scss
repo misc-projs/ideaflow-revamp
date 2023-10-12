@@ -242,6 +242,10 @@
             padding: 1.5rem 0;
         }
 
+        @include respond(screen640){
+            padding: 3rem 0;
+        }
+
     }
 
     &__main-heading{
@@ -317,6 +321,10 @@
             width: 74%;
         }
 
+        @include respond(screen640){
+            width: 78%;
+        }
+
 
     }
 
@@ -347,6 +355,11 @@
         padding: 2.5rem 2rem;
     }
 
+    @include respond(screen640){
+        padding: 2.5rem 0rem;
+    }
+
+
     &__list{
         display: flex;
         justify-content: space-evenly;
@@ -366,6 +379,10 @@
 
         @include respond(screen320){
             padding: 2.3rem;
+        }
+
+        @include respond(screen640){
+            padding: 2.6rem;
         }
 
         &:hover {
@@ -454,6 +471,12 @@
         @include respond(screen600){
             grid-gap: 8rem 14rem;
         }
+
+        @include respond(screen640){
+            padding: 7rem 0;
+            grid-gap: 12rem 18rem;
+
+        }
     }
 
     &__items{
@@ -476,6 +499,10 @@
 
         @include respond(screen480){
             width: 14rem;
+        }
+
+        @include respond(screen640){
+            width: 15rem;
         }
 
     }

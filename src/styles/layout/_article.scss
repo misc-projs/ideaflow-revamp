@@ -48,6 +48,11 @@
             width: 450px;
             row-gap: 3rem;
         }
+
+        @include respond(screen600){
+            width: 475px;
+            row-gap: 3rem;
+        }
         
     }
 
