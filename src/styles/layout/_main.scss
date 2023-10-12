@@ -26,6 +26,12 @@
             border-width: 12px;
             width: 80px;
         }
+
+        @include respond(screen720){
+            margin: 2rem auto 8rem;
+            border-width: 8px;
+            width: 80px;
+        }
     }
 
     padding-bottom: 15rem;
