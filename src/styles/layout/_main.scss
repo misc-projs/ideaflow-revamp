@@ -20,6 +20,12 @@
             border-width: 10px;
             width: 60px;
         }
+
+        @include respond(screen480){
+            margin: 0rem auto 6rem;
+            border-width: 12px;
+            width: 80px;
+        }
     }
 
     padding-bottom: 15rem;
