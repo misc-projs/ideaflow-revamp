@@ -10,6 +10,27 @@
         grid-template-columns: repeat(2, minmax(min-content, max-content));
     }
 
+    @include respond(screen900){
+        padding: 0 5rem;
+    }
+
+    @include respond(screen1024){
+        padding: 0 10rem 0 5rem;
+    }
+
+    @include respond(screen1080){
+        padding: 0 10rem 0 10rem;
+    }
+
+    @include respond(screen1280){
+        padding: 0 10rem 0 15rem;
+    }
+
+    @include respond(screen1366){
+        padding: 0 10rem 0 20rem;
+    }
+
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -38,6 +59,11 @@
         @include respond(screen800){
             padding: .6rem 0 .6rem 8rem ;
             font-size: 2.8rem; 
+        }
+
+        @include respond(screen900){
+            padding: .6rem 0 .6rem 8rem ;
+            font-size: 3rem; 
         }
     }
 
@@ -90,43 +116,56 @@
             padding: 1rem 0 1rem 8rem;            
             font-size: 1.6rem;
         }
+
+        @include respond(screen800){
+            font-size: 2rem;
+        }
     }
 
     &__cta{
-        width: 85%;
-        padding: 1rem 2rem;
-        align-self: center;
+        padding: 0 2rem;
         margin: 2rem 0 1rem;
+        font-size: 1.2rem;
+
+        &,
+        &:link,
+        &:visited{
+            color: $color-white;
+        }
+
+        &:hover{
+            cursor: pointer;
+            line-height: 1;
+            color: $primary-dark;
+        }
+
 
         @include respond(screen320){
-            width: 78%;
-            padding: 1.5rem 2rem;
-            font-size: 1.5rem;   
+            padding: 0 4rem;
+            font-size: 1.6em;   
         }
 
         @include respond(screen360){
-            width: 75%;
             font-size: 1.8rem;   
-            padding: 2rem;
+            padding: 0 6rem;
             margin: 3rem 0 1rem;
         }
 
         @include respond(screen480){
-            width: 70%;
             font-size: 2rem;   
-            padding: 2rem;
+            padding: 0 8rem;
             margin: 3.2rem 0 1rem;
         }
 
         @include respond(screen600){
-            width: 75%;
+            font-size: 2.2rem;   
+            margin: 3.2rem 0 1rem;
         }
 
         @include respond(screen800){
-            width: 60%;
-            font-size: 1.8rem;   
-            padding: 1.5rem 2rem;
-            margin: 3.2rem 0 1rem 0;
+            font-size: 2rem;   
+            padding: 1.5rem 8rem;
+            margin: 2.2rem 0 1rem;
 
         }
     }

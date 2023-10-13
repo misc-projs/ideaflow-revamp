@@ -36,6 +36,9 @@
         grid-row: 1 / 2; 
         padding: 0 0 2rem;
 
+        animation: moveInBottom 1000ms 2s ease-out;
+        animation-fill-mode: backwards;
+
         @include respond(screen320){
             padding: 1.5rem 0;
         }
@@ -65,11 +68,21 @@
 
     &__content-container{
         grid-row: 2 / 3; 
+
+        backface-visibility: hidden;
+
     }
 
     &__main-heading{
         font-size: 2.4rem;
         padding: .4rem 2rem 0;
+
+        animation-name: moveInLeft;
+        animation-duration: 2000ms;
+        /* animation-delay: 1s; */
+        animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
+
 
         @include respond(screen320){
             font-size: 2.8rem;
@@ -106,6 +119,13 @@
         padding: 1rem 2rem 1.8rem;
         font-size: 1.5rem;
         margin: 1rem 0;
+
+        animation-name: moveInRight;
+        animation-duration: 2000ms;
+        /* animation-delay: 1s; */ 
+        animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
+
 
         @include respond(screen320){
             font-size: 1.8rem;
@@ -146,6 +166,35 @@
         width: 100%;
         margin-left : 2rem;
         text-align: center;
+
+        &::after{
+            content: '';
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+
+        &--animated{
+            animation: moveInBottom 1000ms 2s ease-out;
+            animation-fill-mode: backwards;
+        }
+
+        &:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba($color-black,.2);
+    
+            &::after{
+                /* transform: scale(2); */
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0; 
+            }
+        }
 
 
         @include respond(screen320){

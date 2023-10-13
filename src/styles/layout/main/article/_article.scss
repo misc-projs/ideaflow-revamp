@@ -26,6 +26,29 @@
         grid-template-columns: repeat(2, minmax(min-content, max-content));
     }
 
+    @include respond(screen900){
+        padding: 0 5rem;
+    }
+
+    @include respond(screen1024){
+        padding: 0 10rem;
+    }
+
+    @include respond(screen1080){
+        padding: 0 13rem;
+    }
+
+    @include respond(screen1280){
+        padding: 0 15rem;
+    }
+
+    @include respond(screen1366){
+        padding: 0 20rem;
+    }
+    
+
+
+
     &__image {
 
         width: 200px;
@@ -105,6 +128,18 @@
                 font-size: 2.8rem; 
             }
 
+            @include respond(screen900){
+                padding: 2rem 4rem 2rem 0;
+                font-size: 3rem; 
+            }
+
+            @include respond(screen980){
+                font-size: 3.2rem;
+            }
+
+            @include respond(screen1024){
+                font-size: 3.5rem;
+            }
         }
 
         &__underline {
@@ -157,6 +192,14 @@
             @include respond(screen800){
                 padding: .5rem 4rem .5rem 0;            
                 font-size: 1.6rem;
+            }
+
+            @include respond(screen900){
+                font-size: 1.8rem;
+            }
+
+            @include respond(screen1024){
+                font-size: 2rem;
             }
 
 
