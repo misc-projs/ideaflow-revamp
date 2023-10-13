@@ -4,6 +4,10 @@
         display: flex;
         flex-direction: column;
         background-color: $color-light-black;
+
+        @include respond(screen600){
+            padding: 1.2rem;
+        }
     }
 
     &__heading{
@@ -22,12 +26,37 @@
         @include respond(screen360){
             font-size: 3rem;
         }
+
+        @include respond(screen480){
+            font-size: 3.3rem;
+        }
+
+        @include respond(screen540){
+            font-size: 3.6rem;
+        }
+
+        @include respond(screen600){
+            font-size: 3.65rem;
+        }
     }
 
     &__sub-heading{
         padding: 1rem;
         font-size: 1.5rem;
         text-align: center;
+
+        @include respond(screen480){
+            font-size: 1.8rem;
+        }
+
+        @include respond(screen540){
+            font-size: 2rem;
+        }
+
+        @include respond(screen600){
+            font-size: 2.1rem;
+        }
+
     }
 
     &__cta{
@@ -35,6 +64,19 @@
         align-self: center;
         margin: 2rem;
         padding: 1rem 2rem;
+
+        @include respond(screen480){
+            font-size: 1.5rem;
+        }
+
+        @include respond(screen480){
+            font-size: 1.6rem;
+        }
+
+        @include respond(screen640){
+            font-size: 1.8rem;
+        }
+
     }
 
     width: 85%;
@@ -59,5 +101,17 @@
         bottom: -195px;
         padding: 0 0 8rem 0 ;
         width: 70%;
+    }
+
+    @include respond(screen540){
+        bottom: -210px;
+    }
+
+    @include respond(screen600){
+        bottom: -230px;
+    }
+
+    @include respond(screen640){
+        bottom: -200px;
     }
 }
