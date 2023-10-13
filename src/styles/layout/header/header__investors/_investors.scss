@@ -87,7 +87,8 @@
         grid-template-rows: repeat(2, min-content);
         grid-template-columns: repeat(2, min-content);
         place-items: center;
-        padding: 2rem;
+        padding: 2.5rem 0;
+        gap: 2rem 4rem;
 
         @include respond(screen320){
             padding: 2rem 0;
@@ -95,13 +96,13 @@
         }
 
         @include respond(screen360){
-            padding: 6rem 0;
-            grid-gap: 5.5rem 8rem;
+            padding: 4rem 0;
+            grid-gap: 5.5rem 2rem;
         }
 
         @include respond(screen480){
-            padding: 8rem 0;
-            grid-gap: 6.5rem 10rem;
+            padding: 5rem 0;
+            grid-gap: 7.5rem 12rem;
         }
 
         @include respond(screen540){
@@ -138,18 +139,18 @@
     }
     
     &__image {
-        width: 7rem;
+        width: 9rem;
 
         @include respond(screen360){
-            width: 10rem;
+            width: 8rem;
         }
 
         @include respond(screen480){
-            width: 14rem;
+            width: 10rem;
         }
 
         @include respond(screen640){
-            width: 15rem;
+            width: 12rem;
         }
 
         @include respond(screen720){
