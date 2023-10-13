@@ -10,64 +10,69 @@
     <script type="text/javascript" src="./bundled.js"></script>
 </head>
 <body class="container">
-    <!-- Start: Header Container -->
-    <header class="header">
+    <!-- ------------------------------------------ -->
+     <!-- Start: Logo -->
+     <h1 class="logo">
+        <a class="logo__link" href="/" rel="home">
+          <img class="logo__image" src="./images/logo/logo.svg" alt="header-logo" />
+        </a>
+     </h1>
+     <!-- End: Logo -->
+     <!-- ------------------------------------------ -->
+     <!-- Start: Navigation Section -->
+     <section class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+        <label for="navigation-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
 
-        <!-- Start: Logo -->
-        <h1 class="header__logo-container">
-            <a href="/" rel="home">
-              <img class="header__logo-image" src="./images/logo/logo.svg" alt="header-logo" />
-            </a>
-        </h1>
-        <!-- End: Logo -->
-
-        <!-- Start: Navigation Section -->
-        <section class="header__navigation navigation">
-
-            <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
-            <label for="navigation-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-            <div class="navigation__background">&nbsp;</div>
-
-            <nav class=" navigation__nav">
-                <!-- Start: Navigation Links -->
-                <ul class="navigation__list">
-                    <!--  -->
-                    <li class="navigation__item">
-                        <a class="navigation__link">Home</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link">We're Hiring!</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link">Contact</a>
-                    </li>
-                </ul> 
-                <!-- End: Navigation Links -->
-            </nav>
-
-        </section>
-      <!--End: Navigation Section -->
+        <nav class=" navigation__nav">
+            <!-- Start: Navigation Links -->
+            <ul class="navigation__list">
+                <!--  -->
+                <li class="navigation__item">
+                    <a class="navigation__link">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link">We're Hiring!</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link">Contact</a>
+                </li>
+            </ul> 
+            <!-- End: Navigation Links -->
+        </nav>
+     </section>
+     <!--End: Navigation Section -->
+    <!-- ------------------------------------------ -->
+     <!-- Start: Header Container -->
+     <header class="header">
 
       <!-- Start: Header Banner-->
       <section class="header__banner hero-banner">
-        
-        <picture>
-            <source srcset="./images/header/banner/image-header-vlarge.png" media="(min-width:112.5em)"></source>
-            <source srcset="./images/header/banner/image-header-large.png" media="(min-width:67.5em)"></source>
-            <source srcset="./images/header/banner/image-header-800ss.png" media="(min-width:50em)"></source>
-            <source srcset="./images/header/banner/image-header-medium.png" media="(min-width:37.5em)"></source>
-            <source srcset="./images/header/banner/image-header-small.png" media="(min-width:20em)"></source>
-            <img class="hero-banner__image" src="./images/header/banner/image-header-vsmall.png" alt="banner" >
-        </picture>
-        
-        <h2 class="hero-banner__main-heading" >The Intelligence Amplification Company</h2>
-        <p class="hero-banner__text-content">
-            We're creating an ecosystem for humans and machines to work together to solve the world's 
-            most important problems &mdash; starting with a notebook that augments your intelligence.
-        </p>
-        <buton class="cta hero-banner__cta">Try Ideaflow Notes</buton>
+            <!-- Start: Hero-Banner Image -->
+            <picture class="hero-banner__image-container">
+                    <source srcset="./images/header/banner/image-header-vlarge.png" media="(min-width:80em)"></source>
+                    <source srcset="./images/header/banner/image-header-large.png" media="(min-width:70em)"></source>
+                    <source srcset="./images/header/banner/image-header-800ss.png" media="(min-width:67.5em)"></source>
+                    <source srcset="./images/header/banner/image-header-medium.png" media="(min-width:50em)"></source>
+                    <source srcset="./images/header/banner/image-header-medium.png" media="(min-width:37.5em)"></source>
+                    <source srcset="./images/header/banner/image-header-small.png" media="(min-width:20em)"></source>
+                    <img class="hero-banner__image" src="./images/header/banner/image-header-vsmall.png" alt="banner" >
+            </picture>
+            <!-- End: Hero-Banner Image -->
+            
+            <!-- Start: Hero-Banner Content -->
+            <div class="hero-banner__content-container">
+                    <h2 class="hero-banner__main-heading" >The Intelligence Amplification Company</h2>
+                    <p class="hero-banner__text-content">
+                        We're creating an ecosystem for humans and machines to work together to solve the world's 
+                        most important problems &mdash; starting with a notebook that augments your intelligence.
+                    </p>
+                    <buton class="cta hero-banner__cta">Try Ideaflow Notes</buton>
+            </div>
+            <!-- End: Hero-Banner Content -->
       </section>
       <!-- End: Header Banner -->
 
@@ -134,11 +139,11 @@
       </section>
       <!-- End: Investors Section -->
 
-    </header>
-    <!-- End: Header Container -->
-
-    <!-- Start: Content Container -->
-    <main class="main">
+     </header>
+     <!-- End: Header Container -->
+    <!-- ------------------------------------------ -->
+     <!-- Start: Content Container -->
+     <main class="main">
 
         <!-- Start: Article Section -->
         <article class="article">
@@ -247,7 +252,7 @@
                         <!-- Start: Card Content  -->
                         <section class="testimonial-card__content">
                         <p class="testimonial-card__text">“Ideaflow is the force multiplier for
-                        business productivity in this new normal.”</p>
+                        business growth and productivity in this new normal.”</p>
                         </section>
                         <!-- End: Card Content  -->
                         <!------------------------------------------------------------------------>
@@ -277,8 +282,7 @@
                         <!-- Start: Card Content  -->
                         <section class="testimonial-card__content">
                         <p class="testimonial-card__text"> “The amount of value that can be unlocked by 
-                            connecting the right people and ideas together is incredible. 
-                            I'm very excited for what Ideaflow is building”.
+                            connecting the right people together is incredible. 
                         </p>
                         </section>
                         <!-- End: Card Content  -->
@@ -311,11 +315,11 @@
         </section>
          <!-- End: Hiring Section -->
 
-    </main>
-    <!-- End: Content Container -->
-
-    <!-- Start: Footer Container -->
-    <footer class="footer">
+     </main>
+     <!-- End: Content Container -->
+    <!-- ------------------------------------------ -->
+     <!-- Start: Footer Container -->
+     <footer class="footer">
 
         <!-- Start: Footer Header -->
         <h5 class="footer__header">
@@ -367,9 +371,11 @@
         </section>
         <!-- End: Footer Copyright -->
 
-    </footer>
-    <!-- End: Footer Container -->
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+     </footer>
+     <!-- End: Footer Container -->
+    <!-- ------------------------------------------ -->
+
+     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </body>
 </html>
