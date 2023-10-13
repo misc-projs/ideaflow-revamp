@@ -1,0 +1,92 @@
+.sm-links{
+    padding: 1rem;
+
+    position: relative;
+
+    @include respond(screen320){
+        padding: 1.4rem;
+    }
+
+    @include respond(screen360){
+        padding: 1.8rem 3rem;
+    }
+
+    @include respond(screen480){
+        padding: 2.5rem 5.5rem;
+    }
+
+    @include respond(screen540){
+        padding: 2.5rem 3.5rem;
+    }
+
+    @include respond(screen600){
+        padding: 2.5rem 2rem;
+    }
+
+    @include respond(screen640){
+        padding: 2.5rem 0rem;
+    }
+
+
+    &__list{
+        display: flex;
+        justify-content: space-evenly;
+
+        @include respond(screen800){
+            justify-content: center;
+        }
+    }
+
+    &__item{
+        list-style: none;
+        border: 1px solid $cyan;
+        border-radius: .5rem;
+        padding: 1rem;
+        transition: all .3s;
+        cursor: pointer;
+
+        @include respond(screen320){
+            padding: 2rem;
+        }
+
+        @include respond(screen320){
+            padding: 2.3rem;
+        }
+
+        @include respond(screen640){
+            padding: 2.6rem;
+        }
+
+        @include respond(screen720){
+            padding: 3.3rem;
+        }
+
+        @include respond(screen800){
+            padding: 1rem 1.2rem;
+            margin: 0 2rem;
+        }
+
+
+        &:hover {
+            background-color: $color-white;
+            border: 1px solid $color-white;
+            transform: translateY(-3px);
+        }
+
+        &:active,
+        &:focus{
+            transform: translateY(3px);
+        }
+
+        &:hover svg {
+            fill: $color-black;
+        }
+
+    }
+
+    &__icon{
+        fill: $primary-light;
+        height: 2rem;
+        width: 2rem;
+    }
+}

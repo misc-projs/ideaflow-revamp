@@ -1,0 +1,45 @@
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: $color-black;
+
+    height: 10rem;
+
+    &__image{
+        width: 7rem;
+        position: absolute;
+        top: 3.2rem;
+        left: 2rem;
+    
+        @include respond(screen320){
+            width: 10rem;
+            left: 4rem;
+        }
+    
+        @include respond(screen360){
+            width: 11rem;
+            left: 6rem;
+            top: 3.4rem;
+        }
+    
+        @include respond(screen480){
+            left: 8rem;
+        }
+    
+        @include respond(screen600){
+            width: 14rem;
+            left: 8rem;
+            top: 3.6rem;
+        }
+    
+        @include respond(screen900){
+            left: 12rem;
+        }
+    }
+}

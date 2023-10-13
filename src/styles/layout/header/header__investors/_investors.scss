@@ -1,0 +1,208 @@
+
+.investors{
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header{
+        font-weight: 400;
+        text-align: left;
+        font-size: 2rem;
+        padding: 0 2rem;
+
+        @include respond(screen320){
+            font-size: 2.4rem;
+            padding: 0 4rem;
+        }
+
+        @include respond(screen360){
+            font-size: 3rem;
+            padding: 0 6rem;
+        }
+
+        @include respond(screen480){
+            font-size: 3.5rem;
+            padding: 0 8rem;
+        }
+
+        @include respond(screen720){
+            font-size: 2rem;
+            padding: 0rem;
+
+            display: grid;
+            grid-template-columns: 2fr max-content 2fr;
+            column-gap: 1.5rem;
+            place-items: center;
+
+            &::after,
+            &::before{
+                content: '';
+                height: 1px;
+                width: 7rem;
+                display: block;
+                background-color: $color-white;
+            }
+        }
+
+        @include respond(screen768){
+
+            &::after,
+            &::before{
+                width: 8rem;
+            }
+        }
+
+        @include respond(screen800){
+            
+            &::after,
+            &::before{
+                width: 9rem;
+            }
+        }
+
+        @include respond(screen900){
+            
+            &::after,
+            &::before{
+                width: 12rem;
+            }
+        }
+
+        @include respond(screen980){
+            
+            &::after,
+            &::before{
+                width: 16rem;
+            }
+        }
+
+    }
+
+    &__list{
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: repeat(2, min-content);
+        place-items: center;
+        padding: 2rem;
+
+        @include respond(screen320){
+            padding: 2rem 0;
+            grid-gap: 2.5rem 5rem;
+        }
+
+        @include respond(screen360){
+            padding: 6rem 0;
+            grid-gap: 5.5rem 8rem;
+        }
+
+        @include respond(screen480){
+            padding: 8rem 0;
+            grid-gap: 6.5rem 10rem;
+        }
+
+        @include respond(screen540){
+            padding: 6rem 0;
+            grid-gap: 7rem 12rem;   
+        }
+
+        @include respond(screen600){
+            grid-gap: 8rem 14rem;
+        }
+
+        @include respond(screen640){
+            padding: 7rem 0;
+            grid-gap: 12rem 18rem;
+        }
+
+        @include respond(screen720){
+            grid-template-rows: repeat(1, minmax(min-content, max-content));
+            grid-template-columns: repeat(4, minmax(min-content, max-content));
+            grid-gap: 0 6rem;
+            padding: 3rem 0 6rem;
+        }
+    }
+
+    &__items{
+        list-style: none;
+        width: 10rem;
+        height: 10rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    &__image {
+        width: 7rem;
+
+        @include respond(screen360){
+            width: 10rem;
+        }
+
+        @include respond(screen480){
+            width: 14rem;
+        }
+
+        @include respond(screen640){
+            width: 15rem;
+        }
+
+        @include respond(screen720){
+            width: 9rem;
+        }
+
+        
+
+    }
+
+    &__item {
+
+        &-1 { 
+            grid-row: 1 / 2 ;
+            grid-column: 1 / 2 ;
+
+            @include respond(screen720){
+                grid-column: 1 / 2 ;
+            }
+        }
+        &-2 { 
+            grid-row: 1 / 2 ;
+            grid-column: 2 / 3 ;
+
+            @include respond(screen720){
+                grid-column: 2 / 3 ;
+            }
+        }
+        &-3 {
+            grid-row: 2 / 3 ;
+            grid-column: 1 / 2 ;
+
+            @include respond(screen720){
+                grid-row: 1 / 2 ;
+                grid-column: 3 / 4 ;
+            }
+         }
+        &-4 {
+            grid-row: 2 / 3 ;
+            grid-column: 2 / 3 ;
+            font-size: 1.4rem;
+            padding-top: .5rem;
+
+            & a{
+                text-decoration: none;
+                color: $color-white;
+            }
+
+            @include respond(screen720){
+                grid-row: 1 / 2 ;
+                grid-column: 4 / 5 ;
+            }
+
+         }
+    }
+}

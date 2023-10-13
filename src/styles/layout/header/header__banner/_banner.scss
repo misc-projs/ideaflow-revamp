@@ -1,0 +1,188 @@
+.hero-banner{
+    
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    place-items: center; 
+    gap: 1.3rem;
+
+    position: relative;
+
+    @include respond(screen800){
+        grid-template-rows: repeat(3, minmax(min-content, max-content));
+        grid-template-columns: repeat(2, minmax(min-content, max-content));
+        column-gap: 6rem;
+        margin: 2rem 0 0 8rem;
+    }
+
+    @include respond(screen850){
+        column-gap: 10rem;
+    }
+
+    @include respond(screen900){
+        margin-left: 12rem;
+    }
+
+    @include respond(screen980){
+        grid-gap: 2rem 15rem;
+    }
+
+    @include respond(screen1080){
+        column-gap: 10rem;
+    }
+
+    & picture{
+        
+        @include respond(screen800){
+            grid-row: 1 / 4;
+            grid-column: 2 / 3 ;
+        }
+
+    }
+
+    &__image{
+        padding: 0 0 2rem;
+
+        @include respond(screen320){
+            padding: 1.5rem 0;
+        }
+
+        @include respond(screen640){
+            padding: 3rem 0;
+        }
+
+        @include respond(screen800){
+            padding: 0 4.5rem 4.5rem 0;
+        }
+
+        @include respond(screen850){
+            padding: 0 7rem 4.5rem 0;
+        }
+
+        @include respond(screen980){
+            padding: 0 10rem 4.5rem 0;
+        }
+
+
+    }
+
+    &__main-heading{
+        font-size: 2.4rem;
+        padding: .4rem 2rem 0;
+
+        @include respond(screen320){
+            font-size: 2.8rem;
+            padding: .8rem 4rem 0;
+        }
+
+        @include respond(screen360){
+            font-size: 3.8rem;
+            padding: .8rem 6rem 0;
+        }
+
+        @include respond(screen480){
+            font-size: 4.2rem;
+            padding: .8rem 8rem 0;
+        }
+
+        @include respond(screen800){
+            font-size: 4.2rem;
+            padding: .8rem 0rem 1rem;
+        }
+
+        @include respond(screen1080){
+            font-size: 4.4rem;
+        }
+        
+        @include respond(screen1280){
+            font-size: 4.8rem;
+        }
+        
+    }
+
+    &__text-content{
+        text-align: left;
+        padding: 1rem 2rem 1.8rem;
+        font-size: 1.5rem;
+
+        @include respond(screen320){
+            font-size: 1.8rem;
+            padding: 1rem 4rem 2rem;
+        }
+
+        @include respond(screen360){
+            padding: 1rem 6rem 2rem;
+            font-size: 2.2rem;
+        }
+
+        @include respond(screen480){
+            padding: 1rem 8rem 2rem;
+            font-size: 2.3rem;
+        }
+
+        @include respond(screen800){
+            padding: 1rem 0 2rem;
+        }
+
+        @include respond(screen1080){
+            font-size: 2.4rem;
+            padding: 1rem 0 2rem;
+        }
+
+        @include respond(screen1280){
+            font-size: 2.6rem;
+        }
+        
+    }
+
+    &__cta{
+        padding: 1rem 2.8rem;
+        font-size: 1.3rem;
+        width: 85%;
+        text-align: center;
+
+        @include respond(screen320){
+            width: 76%;
+            font-size: 1.5rem;
+            padding: 1.2rem 3rem;
+        }
+
+        @include respond(screen360){
+            width: 74%;
+            font-size: 1.8rem;
+            padding: 1.4rem 3.2rem;
+        }
+
+        @include respond(screen480){
+            width: 68%;
+            font-size: 2rem;
+            padding: 1.6rem 3.4rem;
+        }
+
+        @include respond(screen540){
+            width: 72%;
+        }
+
+        @include respond(screen600){
+            width: 74%;
+        }
+
+        @include respond(screen640){
+            width: 78%;
+        }
+
+        @include respond(screen800){
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        @include respond(screen1080){
+            font-size: 1.8rem;
+        }
+
+        @include respond(screen1280){
+            font-size: 2rem;
+        }
+
+    }
+
+}

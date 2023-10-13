@@ -9,15 +9,28 @@
 
 @import "components/button";
 @import "components/card";
+@import "components/reveal";
 
 
-@import "layout/grid";
-@import "layout/header";
-@import "layout/main";
-@import "layout/footer";
-@import "layout/article";
-@import "layout/about";
-@import "layout/testimonials";
-@import "layout/hiring";
+@import "layout/grid-main/grid";
+
+@import "layout/logo/logo";
+
+@import "layout/navigation/navigation";
+
+@import "layout/header/header";
+@import "layout/header/header__banner/banner";
+@import "layout/header/header__sm/sm-links";
+@import "layout/header/header__investors/investors";
+
+
+@import "layout/main/main";
+@import "layout/main/article";
+@import "layout/main/about";
+@import "layout/main/testimonials";
+@import "layout/main/hiring";
+
+@import "layout/footer/footer";
+
 
 @import "pages/home";
