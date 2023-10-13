@@ -57,6 +57,10 @@
         @media only screen and (min-width:50em){  @content; }
     }
 
+    @if $breakpoint == screen850 {
+        @media only screen and (min-width:53em){  @content; }
+    }
+
     @if $breakpoint == screen900 {
         @media only screen and (min-width:56.25em) {  @content; }
     }
@@ -78,7 +82,7 @@
     }
 
     @if $breakpoint == screen1366 {
-        @media only screen and (min-width:87.375em){  @content; }
+        @media only screen and (min-width:85em){  @content; }
     }
 
     //Change Font Size and other font related properties for screen sizes above 1800px or 112.5em
