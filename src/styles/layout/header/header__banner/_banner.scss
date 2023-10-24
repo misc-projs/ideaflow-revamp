@@ -36,7 +36,7 @@
         grid-row: 1 / 2; 
         padding: 0 0 2rem;
 
-        animation: moveInBottom 1000ms 2s ease-out;
+        animation: moveInBottom 1000ms 1s ease-out;
         animation-fill-mode: backwards;
 
         @include respond(screen320){
